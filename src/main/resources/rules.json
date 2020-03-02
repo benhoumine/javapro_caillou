@@ -1,0 +1,394 @@
+[
+  {
+    "id": 0,
+    "name": "energy_100g",
+    "points" : 0,
+    "minBound" : 0,
+    "component" : "N"
+  },
+  {
+    "id": 1,
+    "name": "energy_100g",
+    "points" : 1,
+    "minBound" : 335,
+    "component" : "N"
+  },
+  {
+    "id": 2,
+    "name": "energy_100g",
+    "points" : 2,
+    "minBound" : 670,
+    "component" : "N"
+  },
+  {
+    "id": 3,
+    "name": "energy_100g",
+    "points" : 3,
+    "minBound" : 1005,
+    "component" : "N"
+  },
+  {
+    "id": 4,
+    "name": "energy_100g",
+    "points" : 4,
+    "minBound" : 1340,
+    "component" : "N"
+  },
+  {
+    "id": 5,
+    "name": "energy_100g",
+    "points" : 5,
+    "minBound" : 1675,
+    "component" : "N"
+  },
+  {
+    "id": 6,
+    "name": "energy_100g",
+    "points" : 6,
+    "minBound" : 2010,
+    "component" : "N"
+  },
+  {
+    "id": 7,
+    "name": "energy_100g",
+    "points" : 7,
+    "minBound" : 2345,
+    "component" : "N"
+  },
+  {
+    "id": 8,
+    "name": "energy_100g",
+    "points" : 8,
+    "minBound" : 2680,
+    "component" : "N"
+  },
+  {
+    "id": 9,
+    "name": "energy_100g",
+    "points" : 9,
+    "minBound" : 3015,
+    "component" : "N"
+  },
+  {
+    "id": 10,
+    "name": "energy_100g",
+    "points" : 10,
+    "minBound" : 3350,
+    "component" : "N"
+  },
+  {
+    "id": 21,
+    "name": "saturated-fat_100g",
+    "points" : 0,
+    "minBound" : 0,
+    "component" : "N"
+  },
+  {
+    "id": 22,
+    "name": "saturated-fat_100g",
+    "points" : 1,
+    "minBound" : 1,
+    "component" : "N"
+  },
+  {
+    "id": 23,
+    "name": "saturated-fat_100g",
+    "points" : 2,
+    "minBound" : 2,
+    "component" : "N"
+  },
+  {
+    "id": 24,
+    "name": "saturated-fat_100g",
+    "points" : 3,
+    "minBound" : 3,
+    "component" : "N"
+  },
+  {
+    "id": 25,
+    "name": "saturated-fat_100g",
+    "points" : 4,
+    "minBound" : 4,
+    "component" : "N"
+  },
+  {
+    "id": 26,
+    "name": "saturated-fat_100g",
+    "points" : 5,
+    "minBound" : 5,
+    "component" : "N"
+  },
+  {
+    "id": 27,
+    "name": "saturated-fat_100g",
+    "points" : 6,
+    "minBound" : 6,
+    "component" : "N"
+  },
+  {
+    "id": 28,
+    "name": "saturated-fat_100g",
+    "points" : 7,
+    "minBound" : 7,
+    "component" : "N"
+  },
+  {
+    "id": 29,
+    "name": "saturated-fat_100g",
+    "points" : 8,
+    "minBound" : 8,
+    "component" : "N"
+  },
+  {
+    "id": 30,
+    "name": "saturated-fat_100g",
+    "points" : 9,
+    "minBound" : 9,
+    "component" : "N"
+  },
+  {
+    "id": 31,
+    "name": "saturated-fat_100g",
+    "points" : 10,
+    "minBound" : 10,
+    "component" : "N"
+  },
+  {
+    "id": 32,
+    "name": "sugars_100g",
+    "points" : 0,
+    "minBound" : 0,
+    "component" : "N"
+  },
+  {
+    "id": 33,
+    "name": "sugars_100g",
+    "points" : 1,
+    "minBound" : 4.5,
+    "component" : "N"
+  },
+  {
+    "id": 34,
+    "name": "sugars_100g",
+    "points" : 2,
+    "minBound" : 9,
+    "component" : "N"
+  },
+  {
+    "id": 35,
+    "name": "sugars_100g",
+    "points" : 3,
+    "minBound" : 13.5,
+    "component" : "N"
+  },
+  {
+    "id": 36,
+    "name": "sugars_100g",
+    "points" : 4,
+    "minBound" : 18,
+    "component" : "N"
+  },
+  {
+    "id": 37,
+    "name": "sugars_100g",
+    "points" : 5,
+    "minBound" : 22.5,
+    "component" : "N"
+  },
+  {
+    "id": 38,
+    "name": "sugars_100g",
+    "points" : 6,
+    "minBound" : 27,
+    "component" : "N"
+  },
+  {
+    "id": 39,
+    "name": "sugars_100g",
+    "points" : 7,
+    "minBound" : 31,
+    "component" : "N"
+  },
+  {
+    "id": 40,
+    "name": "sugars_100g",
+    "points" : 8,
+    "minBound" : 36,
+    "component" : "N"
+  },
+  {
+    "id": 41,
+    "name": "sugars_100g",
+    "points" : 9,
+    "minBound" : 40,
+    "component" : "N"
+  },
+  {
+    "id": 42,
+    "name": "sugars_100g",
+    "points" : 10,
+    "minBound" : 45,
+    "component" : "N"
+  },
+  {
+    "id": 51,
+    "name": "salt_100g",
+    "points" : 0,
+    "minBound" : 0,
+    "component" : "N"
+  },
+  {
+    "id": 52,
+    "name": "salt_100g",
+    "points" : 1,
+    "minBound" : 90,
+    "component" : "N"
+  },
+  {
+    "id": 53,
+    "name": "salt_100g",
+    "points" : 2,
+    "minBound" : 180,
+    "component" : "N"
+  },
+  {
+    "id": 54,
+    "name": "salt_100g",
+    "points" : 3,
+    "minBound" : 270,
+    "component" : "N"
+  },
+  {
+    "id": 55,
+    "name": "salt_100g",
+    "points" : 4,
+    "minBound" : 360,
+    "component" : "N"
+  },
+  {
+    "id": 56,
+    "name": "salt_100g",
+    "points" : 5,
+    "minBound" : 450,
+    "component" : "N"
+  },
+  {
+    "id": 57,
+    "name": "salt_100g",
+    "points" : 6,
+    "minBound" : 540,
+    "component" : "N"
+  },
+  {
+    "id": 58,
+    "name": "salt_100g",
+    "points" : 7,
+    "minBound" : 630,
+    "component" : "N"
+  },
+  {
+    "id": 59,
+    "name": "salt_100g",
+    "points" : 8,
+    "minBound" : 720,
+    "component" : "N"
+  },
+  {
+    "id": 60,
+    "name": "salt_100g",
+    "points" : 9,
+    "minBound" : 810,
+    "component" : "N"
+  },
+  {
+    "id": 61,
+    "name": "salt_100g",
+    "points" : 10,
+    "minBound" : 900,
+    "component" : "N"
+  },
+  {
+    "id": 71,
+    "name": "fiber_100g",
+    "points" : 0,
+    "minBound" : 0,
+    "component" : "P"
+  },
+  {
+    "id": 72,
+    "name": "fiber_100g",
+    "points" : 1,
+    "minBound" : 0.9,
+    "component" : "P"
+  },
+  {
+    "id": 73,
+    "name": "fiber_100g",
+    "points" : 2,
+    "minBound" : 1.9,
+    "component" : "P"
+  },
+  {
+    "id": 74,
+    "name": "fiber_100g",
+    "points" : 3,
+    "minBound" : 2.8,
+    "component" : "P"
+  },
+  {
+    "id": 75,
+    "name": "fiber_100g",
+    "points" : 4,
+    "minBound" : 3.7,
+    "component" : "P"
+  },
+  {
+    "id": 76,
+    "name": "fiber_100g",
+    "points" : 5,
+    "minBound" : 4.7,
+    "component" : "P"
+  },
+  {
+    "id": 81,
+    "name": "proteins_100g",
+    "points" : 0,
+    "minBound" : 0,
+    "component" : "P"
+  },
+  {
+    "id": 82,
+    "name": "proteins_100g",
+    "points" : 1,
+    "minBound" : 1.6,
+    "component" : "P"
+  },
+  {
+    "id": 83,
+    "name": "proteins_100g",
+    "points" : 2,
+    "minBound" : 3.2,
+    "component" : "P"
+  },
+  {
+    "id": 84,
+    "name": "proteins_100g",
+    "points" : 3,
+    "minBound" : 4.8,
+    "component" : "P"
+  },
+  {
+    "id": 85,
+    "name": "proteins_100g",
+    "points" : 4,
+    "minBound" : 6.4,
+    "component" : "P"
+  },
+  {
+    "id": 86,
+    "name": "proteins_100g",
+    "points" : 5,
+    "minBound" : 8.0,
+    "component" : "P"
+  }
+]

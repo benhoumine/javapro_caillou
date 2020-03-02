@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "classe": "Trop Bon",
+    "lowerBound" : -10,
+    "upperBound" : -1,
+    "color" : "green"
+  },
+  {
+    "id": 2,
+    "classe": "Bon",
+    "lowerBound" : 0,
+    "upperBound" : 2,
+    "color" : "light green"
+  },
+  {
+    "id": 3,
+    "classe": "Mangeable",
+    "lowerBound" : 3,
+    "upperBound" : 10,
+    "color" : "yellow"
+  },
+  {
+    "id": 4,
+    "classe": "Mouai",
+    "lowerBound" : 11,
+    "upperBound" : 18,
+    "color" : "orange"
+  },
+  {
+    "id": 5,
+    "classe": "Degueu",
+    "lowerBound" : 19,
+    "upperBound" : 40,
+    "color" : "red"
+  }
+]
