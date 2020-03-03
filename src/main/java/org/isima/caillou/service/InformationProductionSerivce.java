@@ -8,6 +8,7 @@ import java.io.Reader;
 import java.net.URL;
 import java.nio.charset.Charset;
 
+import org.isima.caillou.models.Classe;
 import org.json.JSONObject;
 import org.springframework.stereotype.Service;
 
@@ -49,7 +50,7 @@ public class InformationProductionSerivce {
 	 }
 	 
 	 
-	 public Integer calculateScoreNegativeNutrionnel(String codeBarre) {
+	 public Integer calculateScoreNegativeNutritionnel(String codeBarre) {
 		 
 		 JSONObject produit;
 		 Integer scoreNutrionnel = 0 ; 
@@ -68,7 +69,7 @@ public class InformationProductionSerivce {
 		 return scoreNutrionnel ; 
 	 }
 	 
-	 public Integer calculateScorePositiveNutrionnel(String codeBarre) {
+	 public Integer calculateScorePositiveNutritionnel(String codeBarre) {
 		 
 		 JSONObject produit;
 		 Integer scoreNutrionnel = 0 ; 
@@ -76,7 +77,7 @@ public class InformationProductionSerivce {
 			produit = getInformation(codeBarre);
 			JSONObject nutriscoreData = (JSONObject)produit.get("nutriscore_data") ;
 			Integer fiberPoints = Integer.parseInt(nutriscoreData.get("fiber_points").toString());
-			Integer proteinsPoints = Integer.parseInt(nutriscoreData.get("proteinsPoints").toString());
+			Integer proteinsPoints = Integer.parseInt(nutriscoreData.get("proteins_points").toString());
 			scoreNutrionnel =  fiberPoints+proteinsPoints;
 
 		} catch (IOException e) {
@@ -85,9 +86,19 @@ public class InformationProductionSerivce {
 		 return scoreNutrionnel ; 
 	 }
 	 
-	 public String calculateScoreNutrionnel(String codeBarre) {
-		 Integer score =  calculateScoreNegativeNutrionnel(codeBarre) - calculateScorePositiveNutrionnel(codeBarre); 
-		 String classe = "";
-		 return classe;
+	 public Classe calculateScoreNutritionnel(String codeBarre) {
+		 Integer score =  calculateScoreNegativeNutritionnel(codeBarre) - calculateScorePositiveNutritionnel(codeBarre); 
+		 
+		 if(score <= -1) {
+			 return Classe.TROPBON;
+		 }else if(score >= 0 && score <= 2) {
+			 return Classe.BON;
+		 }else if(score >= 3 && score <= 10) {
+			 return Classe.MANGEABLE;
+		 }else if(score >= 11 && score <= 18) {
+			 return Classe.MOUI;
+		 }else {
+			 return Classe.DEGUEU;
+		 }	 
 	 }
 }
