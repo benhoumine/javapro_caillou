@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.isima.caillou.models.Classe;
 import org.isima.caillou.service.InformationProductionSerivce;
+import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -51,6 +52,16 @@ public class OpenFoodFactController {
 		return information ; 
     }
 	
-	
+	//US 4 : API REST fournissant les qualités, les défauts et le score nutritionnel d'un produit
+	@GetMapping("/{codeBarre}/qualites-defauts-score")
+	public String getQualitesDefautsScoreNutritionnel(@PathVariable String codeBarre) throws IOException {
+		JSONObject produit = informationProductService.getInformation(codeBarre);
+		System.out.println("Le produit est : " + produit);
+		Classe classe = informationProductService.calculateScoreNutritionnel(codeBarre) ;
+		String information = "Les qualités du produit sont : " + informationProductService.getQualities(codeBarre)+ "\n";
+		information += "et ses défauts sont : " + informationProductService.getDefaults(codeBarre) + "\n";
+		information +=  "le score est : " + classe.getClasse();
+		return information.toString() ;
+	}
 
 }

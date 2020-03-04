@@ -9,7 +9,9 @@ import java.net.URL;
 import java.nio.charset.Charset;
 
 import org.isima.caillou.models.Classe;
+import org.json.JSONArray;
 import org.json.JSONObject;
+import org.json.JSONString;
 import org.springframework.stereotype.Service;
 
 
@@ -101,4 +103,37 @@ public class InformationProductionSerivce {
 			 return Classe.DEGUEU;
 		 }	 
 	 }
+
+	 //Récuperer les qualités du produit
+	 public String getQualities(String codeBarre) {
+
+		 JSONObject produit;
+		 String qualites = "" ;
+		 try {
+			 produit = getInformation(codeBarre);
+			 JSONArray data_quality_info_tags = (JSONArray) produit.get("data_quality_tags");
+			 qualites =  data_quality_info_tags.toString();
+
+		 } catch (IOException e) {
+			 e.printStackTrace();
+		 }
+		 return qualites ;
+	 }
+
+	//Récuperer les défauts du produit
+	public String getDefaults(String codeBarre) {
+
+		JSONObject produit;
+		String defauts = "" ;
+		try {
+			produit = getInformation(codeBarre);
+			String allergens_from_ingredients =  produit.get("allergens_from_ingredients").toString();
+			defauts =  allergens_from_ingredients.toString();
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return defauts ;
+	}
+
 }
