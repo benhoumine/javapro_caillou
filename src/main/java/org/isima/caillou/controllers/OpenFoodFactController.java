@@ -3,7 +3,7 @@ package org.isima.caillou.controllers;
 import java.io.IOException;
 
 import org.isima.caillou.models.Classe;
-import org.isima.caillou.service.InformationProductionSerivce;
+import org.isima.caillou.service.InformationProductSerivce;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,7 +17,7 @@ public class OpenFoodFactController {
 	
 	
 	@Autowired
-	private InformationProductionSerivce informationProductService;
+	private InformationProductSerivce informationProductService;
 	
 	//US 0 : Récuperer les informations d'un produit sur Open Food Fact	
 	@GetMapping("/{codeBarre}")

@@ -1,7 +1,13 @@
-openfoodfact:
-  api.url: https://fr.openfoodfacts.org/api/v0
-  nutriments:
+openfoodfact: 
+  apiurl: https://fr.openfoodfacts.org/api/v0/produit/
+  nutriments: 
     attr: nutriments
-    list: energy_100g, saturated-fat_100g, sugars_100g, salt_100g, fiber_100g, proteins_100g
-
+    listnutritionnegative: 
+      - energy_points
+      - saturated_fat_ratio_points
+      - sodium_points
+      - sugars_points
+    listnutritionpositive : 
+      - fiber_points
+      - proteins_points
 server.port: 8081
